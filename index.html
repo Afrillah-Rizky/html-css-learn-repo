@@ -30,9 +30,9 @@
         -->
         <ul>
             <li><a href="#home-banner">Home</a></li> <!-- -->
-            <li><a href="">Products</a></li>
-            <li><a href="">Membership</a></li>
-            <li><a href="">About</a></li>
+            <li><a href="#product">Products</a></li>
+            <li><a href="#membership">Membership</a></li>
+            <li><a href="#about">About</a></li>
         </ul>
 
     </nav>
@@ -41,8 +41,8 @@
         
        <section>
 
-            <div id="home-banner">
-                <h2>Summer Sale!</h2> 
+            <div>
+                <h2 id="home-banner">Summer Sale!</h2> 
                 <p>Get 5% Discount for April purchase</p>
             </div>
                
@@ -57,46 +57,103 @@
                 <article>
                     <h3>Ring</h3>
                     <p></p> <!-- Product description-->
-                    <a href=""></a> <!-- Link for Purchase -->
+                    <a href="" class="link-shop">Shop Now!</a> <!-- Link for Purchase -->
                 </article>
                 <article>
                     <h3>Bracelet</h3>
                     <p></p> <!-- Product Description-->
-                    <a href=""></a> <!-- Link for Purchase -->
+                    <a href="link-shop">Shop Now!</a> <!-- Link for Purchase -->
                 </article>
                 <article>
                     <h3>Neclace</h3>
                     <p></p> <!-- Product Description-->
-                    <a href=""></a> <!-- Link for Purchase -->
+                    <a href="link-shop">Shop Now!</a> <!-- Link for Purchase -->
                 </article>
             </section>
             
        </section>
 
-       <section>
-            <h2>Membership</h2>
+
+            <h2 id="membership">Membership</h2>
             <p>Our membership have benefit such as:</p>
             <ul>
                 <li>Special price offer.</li>
                 <li>latest info of new and limited products</li>
             </ul>
-            <div>
-                <h3>Membership register.</h3>
-                <form action="./" method="post">
-                    <!-- Form list up
-                    1. First name
-                    2. Last name
-                    3. E-mail
-                    4. Phone
-                    5. country / Region
-                    6. Submit button-->
-                </form>
-            </div>
+
+                <div class="form-container">
+                    <h3>Membership register.</h3>
+                    <form action="./" method="post">
+                        <!-- Form list up
+                        1. First name
+                        2. Last name
+                        3. E-mail
+                        4. Phone
+                        5. country / Region
+                        6. Submit button-->
+                        <div class="form-group">
+                            <label for="fname">First Name:</label>
+                            <input type="text" id="fname" name="fname" class="form-input">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="lname">Last Name:</label>
+                            <input type="text" id="lname" name="lname" class="form-input" >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email :</label>
+                            <input type="email" id="email" name="email" class="form-input" >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Num :</label>
+                            <input type="tel" id="phone" name="phone" class="form-input" pattern="[+]{1}[0-9]{11,14}">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="country-region">Country :</label>
+                            <select id="country-region" name="country-region" class="form-input">
+                                <option value="usa">USA</option>
+                                <option value="canada">Canada</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="submit" value="Submit">
+                        </div>
+
+                    </form>
+                </div>
+                
             
-       </section>
+
        <div>
-            <h2>About</h2>
-            <p></p> <!-- Mangata and Gallo -->
+            <h2 id="about">About</h2>
+            <article>
+                <h3>Welcome to Mangata & Gallo</h3>
+                <p>At Mangata & Gallo, we believe in the timeless allure of fine jewelry, crafted with passion and precision. Our name, inspired by the Swedish word for the shimmering, magical trail of moonlight on water, reflects our commitment to creating pieces that capture the essence of beauty and elegance.</p>
+            </article>
+            <article>
+                <h3>Our Story</h3>
+                <p>Founded with a vision to redefine luxury jewelry, Mangata & Gallo brings together a legacy of craftsmanship and contemporary design. Each piece in our collection tells a story of artistry and dedication, crafted by skilled artisans who blend traditional techniques with modern aesthetics.</p>
+            </article>
+            <article>
+                <h3>Our Collections</h3>
+                <p>Explore our exclusive collections, curated to appeal to every style and occasion. From exquisite diamond engagement rings that symbolize eternal love to statement necklaces that elevate any ensemble, Mangata & Gallo offers jewelry that resonates with sophistication and grace.</p>
+            </article>
+            <article>
+                <h3>Craftsmanship</h3>
+                <p>We take pride in our commitment to quality and detail. Every piece undergoes meticulous craftsmanship and is created using the finest materials, ensuring not only beauty but also longevity. Whether you seek a personalized creation or a cherished gift, our artisans are dedicated to exceeding your expectations.</p>
+            </article>
+            <article>
+                <h3>Visit Us</h3>
+                <p>Located in [Location], our boutique invites you to experience the world of Mangata & Gallo. Discover jewelry that resonates with your unique style and celebrates lifes most precious moments.</p>
+            </article>
+            <article>
+                <h3>Contact Us</h3>
+                <p>For inquiries, appointments, or to learn more about our collections, please reach out to us at [Contact Information].</p>
+            </article>
        </div> 
 
     </main>

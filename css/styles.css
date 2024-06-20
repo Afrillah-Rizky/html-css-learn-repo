@@ -1,11 +1,101 @@
-body{}
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(190, 180, 180);
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+header  img {
+    background-color: rgb(56, 54, 54);
+    width: 100%;
+    border-radius: 4px;
+}
+
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
 
 nav ul{
     list-style: none;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
-nav li{
+nav ul li{
     display: inline-block;
+    
 }
 
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color : #555;
+}
+
+
+.membership-container{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.form-container{
+    width: 100%;
+    /*max-width: 600px;*/
+    margin : 0 auto;
+    padding : 20px;
+    border : 1px solid #ccc;
+    border-radius : 5px;
+    background-color: #f9f9f9;
+
+}
+
+.form-group{
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.form-group label{
+    float:left;
+    width: 150px;
+    font-weight: bold;
+}
+
+.form-group input, .form-group select{
+    width: calc(100% - 160px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group select {
+    width: calc(100% - 165px);
+}
+
+.form-group input[type="submit"] {
+    width: auto;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-group input[type="submit"]:hover{
+    background-color: #45a049;
+}
