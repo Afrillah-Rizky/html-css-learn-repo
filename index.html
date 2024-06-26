@@ -15,7 +15,9 @@
 <body>
     <header>
         <!-- Contain Logo of the client-->
-        <img id="client-logo" src="Images/Asset 4@3x.png"> <!-- Logo is white, so currenly it is invisible-->
+            <img id="client-logo" src="Images/Asset 4@3x.png"> <!-- Logo is white, so currenly it is invisible-->
+
+        
         
     </header>
     <nav>
@@ -38,42 +40,43 @@
     </nav>
     <main>
         <!--Main contenr-->
-        
-       <section>
+       <div class="home-container"> 
+            <section class="home-banner">
 
-            <div>
-                <h2 id="home-banner">Summer Sale!</h2> 
+                <h2>Summer Sale!</h2> 
                 <p>Get 5% Discount for April purchase</p>
-            </div>
                
-       </section>  
+            </section>  
 
 
-       <section>
-            <!-- Product-->
-               <!-- # 3 Colums contain an image followed by a heading and some text-->
-            <h2 id="product">Our Products</h2>
-            <section>
-                <article>
-                    <h3>Ring</h3>
-                    <p></p> <!-- Product description-->
-                    <a href="" class="link-shop">Shop Now!</a> <!-- Link for Purchase -->
-                </article>
-                <article>
-                    <h3>Bracelet</h3>
-                    <p></p> <!-- Product Description-->
-                    <a href="link-shop">Shop Now!</a> <!-- Link for Purchase -->
-                </article>
-                <article>
-                    <h3>Neclace</h3>
-                    <p></p> <!-- Product Description-->
-                    <a href="link-shop">Shop Now!</a> <!-- Link for Purchase -->
-                </article>
+            <section class="product-container">
+                <!-- Product-->
+                <!-- # 3 Colums contain an image followed by a heading and some text-->
+                <h2 id="product-title">Our Products</h2>
+                <section class="product-section">
+                    <article class="product-article">
+                        <div class="product-photo"></div>
+                        <h3>Ring</h3>
+                        <p></p> <!-- Product description-->
+                        <a href="" class="link-shop">Shop Now!</a> <!-- Link for Purchase -->
+                    </article>
+                    <article class="product-article">
+                        <div class="product-photo"></div>
+                        <h3>Bracelet</h3>
+                        <p></p> <!-- Product Description-->
+                        <a href="link-shop">Shop Now!</a> <!-- Link for Purchase -->
+                    </article>
+                    <article class="product-article">
+                        <div class="product-photo"></div>
+                        <h3>Neclace</h3>
+                        <p></p> <!-- Product Description-->
+                        <a href="link-shop">Shop Now!</a> <!-- Link for Purchase -->
+                    </article>
             </section>
             
        </section>
-
-
+       </div>
+        <div class="membership-container">
             <h2 id="membership">Membership</h2>
             <p>Our membership have benefit such as:</p>
             <ul>
@@ -125,10 +128,8 @@
 
                     </form>
                 </div>
-                
-            
-
-       <div>
+        </div>
+       <div class="about-container">
             <h2 id="about">About</h2>
             <article>
                 <h3>Welcome to Mangata & Gallo</h3>
@@ -162,13 +163,16 @@
         <!-- left colums contain small version of the client logo-->
         <!-- right column containt copyright text-->
        <div class="footer-container">
-            <div>
-            <!-- client logi-->
-            <img src="Images/Asset 1@3x.png">
-            </div>
-            <div>
-                <p>Copyright : Mangata & Gallo</p>
-            </div>
+        <div class="footer-section">
+            <div class="footer-content">
+                <!-- client logi-->
+                <img src="Images/Asset 1@3x.png">
+                </div>
+                <div class="footer-content">
+                    <p>Copyright : Mangata & Gallo</p>
+                </div>
+        </div>
+            
        </div>
 
        
